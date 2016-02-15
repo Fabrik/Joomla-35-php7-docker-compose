@@ -1,0 +1,36 @@
+# connect @ http://127.0.0.1:8080/ you must set your J db to use the pdo driver
+nginx:
+    image: prooph/nginx:www
+    ports:
+        - "8080:80"
+        - "443:443"
+    links:
+        - php:php
+    volumes_from:
+        - data
+
+php:
+    image: prooph/php:7.0-fpm
+    links:
+        - mysql:mysql
+    volumes_from:
+        - data
+
+mysql:
+  image: tutum/mysql:5.6
+  volumes_from:
+      - data
+  volumes:
+      - ./sql:/sql
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_USER: fabrik
+    MYSQL_PASS: fabrikABC123!
+    STARTUP_SQL: /sql/install.sql
+    ON_CREATE_DB: fabrik
+
+data:
+  image: busybox
+  volumes:
+          - .:/var/www
