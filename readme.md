@@ -1,7 +1,7 @@
 Introduction
 -------------
 
-This project aims to provide a server environment for testing the Joomla 3.5 beta2 release and Fabrik. It consists of
+This project aims to provide a server environment for testing Joomla 3.5 release and Fabrik. It consists of
 
 * Vagrantfile - for windows users to boot to docker
 * docker-compose.yml - A docker compose file describing the test server
@@ -10,6 +10,13 @@ This project aims to provide a server environment for testing the Joomla 3.5 bet
 
 Getting started
 ---------------
+
+First of all get the latest copy of Fabrik's source code from github:
+
+> git clone https://github.com/Fabrik/fabrik.git
+
+You won't need to install it, the vagrant file handles creating the links from this folder to the Joomla 
+installations folders.
 
 Installation of docker / vagrant is outside the scope of this project. My own set up has grown organically and 
 as Docker development is moving so fast I feel it best to simply refer you to their installation guide:
@@ -38,12 +45,9 @@ From here we can run a command to create our actual server:
 This will take a while whilst it downloads the various docker files. The -d flag runs the server in the background so that once it is
 running you can perform other commands inside the vagrant box.
 
-You will need to edit your configuration.php file to set the database driver to the PDO driver
-
 Once up you should be able to open a browser with the address http://127.0.0.1:8080 and your Joomla site should be visible.
-
 Notes:
----------
+
 The Joomla admin user is:
 
 username: admin
