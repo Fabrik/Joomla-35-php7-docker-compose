@@ -38,9 +38,12 @@ From here we can run a command to create our actual server:
 This will take a while whilst it downloads the various docker files. The -d flag runs the server in the background so that once it is
 running you can perform other commands inside the vagrant box.
 
-Once up you should be able to open a browser with the address http://127.0.0.1:8080 and your Joomla site should be visible.
-Notes:
+You will need to edit your configuration.php file to set the database driver to the PDO driver
 
+Once up you should be able to open a browser with the address http://127.0.0.1:8080 and your Joomla site should be visible.
+
+Notes:
+---------
 The Joomla admin user is:
 
 username: admin
