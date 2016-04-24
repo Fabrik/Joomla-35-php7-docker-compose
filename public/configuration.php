@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'This site is down for maintenance.<br />Please check back again soon.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'fabrik';
+	public $sitename = 'Joomla 35';
 	public $editor = 'tinymce';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -18,7 +18,7 @@ class JConfig {
 	public $db = 'fabrik';
 	public $dbprefix = 'zwkgr_';
 	public $live_site = '';
-	public $secret = 'MqcXjZ6txLrx0wDY';
+	public $secret = 'hoOPlIqjSmKX0oPi';
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'https://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
@@ -31,8 +31,8 @@ class JConfig {
 	public $offset = 'UTC';
 	public $mailonline = '1';
 	public $mailer = 'mail';
-	public $mailfrom = 'foo@bar.com';
-	public $fromname = 'fabrik';
+	public $mailfrom = 'rob@pollen-8.co.uk';
+	public $fromname = 'Joomla 35';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
 	public $smtpuser = '';
@@ -56,8 +56,8 @@ class JConfig {
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $feed_email = 'none';
-	public $log_path = 'F:\\Users\\rob\\PhpstormProjects\\joomla35/logs';
-	public $tmp_path = 'F:\\Users\\rob\\PhpstormProjects\\joomla35/tmp';
+	public $log_path = 'C:\\xampp\\htdocs\\joomla35/logs';
+	public $tmp_path = 'C:\\xampp\\htdocs\\joomla35/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 }
