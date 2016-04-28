@@ -56,8 +56,8 @@ class JConfig {
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $feed_email = 'none';
-	public $log_path = 'C:\\xampp\\htdocs\\joomla35/logs';
-	public $tmp_path = 'C:\\xampp\\htdocs\\joomla35/tmp';
+	public $log_path = '/var/www/html/logs';
+	public $tmp_path = '/var/www/html/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 }
