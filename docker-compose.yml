@@ -10,7 +10,7 @@ nginx:
         - data
 
 php:
-    image: prooph/php:7.0-fpm
+    build: images/php7
     links:
         - mysql:mysql
     volumes_from:

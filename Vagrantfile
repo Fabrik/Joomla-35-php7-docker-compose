@@ -64,6 +64,13 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "./fabrik/libraries/joomla/document/fabrikfeed", "/src/public/libraries/joomla/document/fabrikfeed"
   config.vm.synced_folder "./fabrik/libraries/joomla/document/pdf", "/src/public/libraries/joomla/document/pdf"
 
+# Whisper demo
+  config.vm.synced_folder "./whisper/mod_counter", "/src/public/modules/mod_counter"
+  config.vm.synced_folder "./whisper/plg_sys_whisper", "/src/public/plugins/system/whisper"
+  config.vm.synced_folder "./whisper/com_todo/admin",  "/src/public/administrator/components/com_todo"
+  config.vm.synced_folder "./whisper/com_todo/front",  "/src/public/components/com_todo"
+  config.vm.synced_folder "./whisper/com_todo/media",  "/src/public/media/com_todo"
+
 
    # Run our provisioning shell script
    config.vm.provision "shell", inline: $script
